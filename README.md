@@ -8,7 +8,8 @@
 ## Ways to use git
 
 1. Command Line
-2. Tools like gitKraken
+2. Tools like gitKraken(Paid/Free for students)
+3. Github Desktop(free)
 
 ## Setting up with Git
 
@@ -87,7 +88,7 @@ git commit -m "<your message here>"
 ```
 
 6. Now go to github and login into your account.
-7. Click on ["NEW"](https://github.com/new) button on the top left. Give it a name, description (optional)  and access (Private/Public). You do not need to a README.md file and a gitignore file. Choose a license if necessary and click "Create Repository"
+7. Click on ["NEW"](https://github.com/new) button on the top left. Give it a name, description (optional) and access (Private/Public). You do not need to a README.md file and a gitignore file. Choose a license if necessary and click "Create Repository"
 8. Now you can push the local code to the existing repository on github. To do so follow the instructions in the "push an existing repository from the command line : "
 
 <img src="./imgs/github_instructions.jpg" style="padding:10px; width:75%; align=center">
@@ -100,7 +101,7 @@ git checkout -b <name_of_new_branch>
 
 <img src="./imgs/make-new-branch.png" style="padding:10px; width:75%; align=center">
 
-This how you create a new  branch.
+This how you create a new branch.
 
 ## How branching works
 
@@ -114,3 +115,43 @@ git checkout <branch_name>
 ```
 
 **NOTE :** Using the -b flag will create a new branch.
+
+## Github for coder
+
+Please follow the recommendation for git while working on the project.
+A Git Project can have a main/master branch. This is the primary branch which can be used to publish a feature/update.
+
+Recommendation by Jeremy.
+
+- Main Branch : This is the primary branch and updates to this branch can only be pushed by people with Maintain and Admin roles. This branch can be set to CI/CD when a new update is pushed.
+- DEV Branch : This is the branch where all of the active developement takes place. This can also be referred as a BETA branch. Once the code is reviewed and all the testing has passed, the code from this branch can be merged to main branch for release.
+
+More branches can be created out of the dev branch to implement an individual feature and the baby branch can be merged back in the "DEV" branch.
+
+_Recommened Reading:_ [Branching in a nutshell!](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+
+## Github for Management
+
+Repository Roles for Organization
+
+- Read : Recommended for non-code contributors who want to view or discuss your project
+- Triage: Recommended for contributors who need to proactively manage issues and pull requests without write access
+- Write: Recommended for contributors who actively push to your project
+- Maintain: Recommended for project managers who need to manage the repository without access to sensitive or destructive actions
+- Admin: Recommended for people who need full access to the project, including sensitive and destructive actions like managing security or deleting a repository
+
+Organization owners can set base permissions that apply to all members of an organization when accessing any of the organization's repositories. For more information, see "Setting base permissions for an organization."
+
+### Permissions for each role
+
+Permission are available in Github to restrict and control the access of a repository.
+
+[PERMISSIONS FOR EACH ROLES](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-roles-for-an-organization#permissions-for-each-role)
+
+_SOURCE :_ [LINK HERE](https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-roles-for-an-organization)
+
+## Github as OAUTH
+
+Github can also we used to authorize signing in for application.
+
+_Resource :_ [Authorizing using Github](https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps)
