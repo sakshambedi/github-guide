@@ -16,7 +16,7 @@
 1. Set Username
 
 ```bash
-git config --<system_flag~~> user.name "<name>"
+git config --<system_flag> user.name "<name>"
 ```
 
 2. Set email
@@ -56,7 +56,7 @@ Example : We want to copy this demo repo
 3. copy the link in the textbox
 4. Run the following command in the terminal.
 
-<img src="./imgs/sakshambedifinal-project-3380 COMP3380 final project fall 2020 httpwww.cs.umanitoba.ca~kleungcomp3380indexAll.html.png" style="width:75%;padding:10px">
+<img src="./imgs/sakshambedifinal-project-3380 COMP3380 final project fall 2020 httpwww.cs.umanitoba.ca~kleungcomp3380indexAll.html.png" style="display:block;margin-left:auto;margin-right:auto;width:75%;padding:10px;">
 
 ```bash
 git clone https://github.com/sakshambedi/final_project_3380.git
@@ -91,17 +91,7 @@ git commit -m "<your message here>"
 7. Click on ["NEW"](https://github.com/new) button on the top left. Give it a name, description (optional) and access (Private/Public). You do not need to a README.md file and a gitignore file. Choose a license if necessary and click "Create Repository"
 8. Now you can push the local code to the existing repository on github. To do so follow the instructions in the "push an existing repository from the command line : "
 
-<img src="./imgs/github_instructions.jpg" style="padding:10px; width:75%; align=center">
-
-## Creating a new branch
-
-```bash
-git checkout -b <name_of_new_branch>
-```
-
-<img src="./imgs/make-new-branch.png" style="padding:10px; width:75%; align=center">
-
-This how you create a new branch.
+<img src="./imgs/github_instructions.jpg" style="display:block;margin-left:auto;margin-right:auto;width:75%;padding:10px;">
 
 ## How branching works
 
@@ -115,6 +105,25 @@ git checkout <branch_name>
 ```
 
 **NOTE :** Using the -b flag will create a new branch.
+
+## Creating a new branch
+
+```bash
+git checkout -b <name_of_new_branch>
+```
+
+<img src="./imgs/make-new-branch.png" style="display:block;margin-left:auto;margin-right:auto;width:75%;padding:10px;">
+
+This how you create a new branch.
+Once you have created a new branch you can do anything here and it will be stored locally. Once you are donw working on your implementation, you can push that new update to the cloud repository.
+
+## Delete a branch
+
+You can easily delete a branch using the -d flag
+
+```bash
+git branch -d <branch_name>
+```
 
 ## Github for coder
 
@@ -152,6 +161,63 @@ _SOURCE :_ [LINK HERE](https://docs.github.com/en/organizations/managing-access-
 
 ## Github as OAUTH
 
-Github can also we used to authorize signing in for application.
+Github can also we used to authorize sign up and signing in for application.
 
 _Resource :_ [Authorizing using Github](https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps)
+
+## Issues in github
+
+Issues in github is used to quickly create issues, track work and stay up to date with the bugs and issues in the project. It increases community envolvment and a medium of effective communication.
+
+### Creating a issue
+
+1. On the main page, go to the issues tab.
+2. Click on new issue
+3. Give it a title and a description. Choose a assignee, give it one label out of the followings :
+
+   - bug
+   - documentation
+   - duplicate
+   - invalid
+   - question
+   - wontfix
+
+4. Choose the project if it is part of a project. Finally choose milestone.
+
+<img src="./imgs/issue_example.jpg" style="display:block;margin-left:auto;margin-right:auto;width:75%;padding:10px;">
+
+Congratulations you have created your first issue!!
+_NOTE :_ For an organization, the user must have admin or owner role to delete an issue.
+
+### Pull request
+
+This tab contains all of the pull request made by the teams. The changes can be reviewed on this page before making a final decision.
+
+<img src="./imgs/pr_example.jpg" style="display:block;margin-left:auto;margin-right:auto;width:75%;padding:10px;">
+
+### Actions
+
+Actions is an CI/CD platforms to assist automating building, testing and deploying pipeline. Users can run a workflow to automatically add the appropriate labels whenever someone creates a new issue in your repository.
+Documentation for [Github Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
+
+## Projects
+
+This part of github is still in beta.
+
+## Wiki
+
+Wiki is a section for hosting documentation. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. A README file quickly tells what your project can do, while you can use a wiki to provide additional documentation
+
+## What is a README.MD
+
+A README is often the first item a visitor will see when visiting your repository. README files typically include information on:
+
+- What the project does
+- Why the project is useful
+- How users can get started with the project
+- Where users can get help with your project
+- Who maintains and contributes to the project
+
+## Settings
+
+Setting contains all the settings for the repository, including ablity to change the name of the repo and ability to delete it.
